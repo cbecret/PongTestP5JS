@@ -54,7 +54,7 @@ function playing() {
     xBall -= 5;
   }
 
-  if (xBall > 1200) {
+  if (xBall > (gameWidth - 60)) {
     if ((yEnnemy - yBall) <=10 && directionBall == 1) {
       directionBall = -1;
       colorPlayR = 150;
@@ -74,7 +74,7 @@ function playing() {
   }
 
 
-  if (yBall > 350) {
+  if (yBall > (gameHeight - 20)) {
     angleBall = -1;
   }
   if (yBall < 20) {
